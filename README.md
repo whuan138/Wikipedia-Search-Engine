@@ -6,7 +6,7 @@ From part A, we collected data from our web crawler (modified to get 800MB) into
  can be inputted and processed with PyLucene’s query parser. Users can access the web
  interface to input search queries and review the results. Using the implemented ranking
  with the BM25 model, stop words handling, and custom rank boosting, the most relevant
- documents are retrieved and the top ten search results appear.--
+ documents are retrieved and the top ten search results appear.
 Seed URL: Louisiana Highway
  Scraped: 70,000 web pages
  Total of 790MB
@@ -33,8 +33,7 @@ The system does not use a custom snippet-generation algorithm to display a snipp
  This can result in limited answers and it may not have the extent of information that a user is searching
  for. Additionally, loading the results of a query takes some time. If we were to build upon this project, we
  could parallelize the scraping and indexing process in order to account for this limitation.
- ## Instructions on how to deploy the system. Ideally, you should include an indexer.bat (Windows) or
- indexer.sh (Unix/Linux) executable file that takes as input all necessary parameters
+ ## Instructions on how to deploy the system
  To deploy the website:
  Flask must be installed on the system that we run the website on. The site can be deployed by the
  commands in the group32/group32/partB/ directory:
