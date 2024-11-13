@@ -1,5 +1,5 @@
-## Overview of system, including (but not limited to):
- # Architecture
+# Overview of system, including (but not limited to):
+ ## Architecture
 From part A, we collected data from our web crawler (modified to get 800MB) into a
  .json file. The scraped data is indexed with PyLucene, which helps handle the different
  text fields such as title, content, tags, and URL. With this indexed data, a search query
@@ -10,13 +10,13 @@ From part A, we collected data from our web crawler (modified to get 800MB) into
 Seed URL: Louisiana Highway
  Scraped: 70,000 web pages
  Total of 790MB
- # Index Structures
+ ## Index Structures
 We used several text fields for our indexing. We scraped titles, text, tags, and URLs from
  the Wikipedia webpages and stored them in the JSON. For the analyzer, we chose the
  StandardAnalyzer because it is the most general analyzer which meets our needs, as
  Wikipedia pages are mostly textual content, so the StandardAnalyzer works well in this
  case to tokenize and process the text.
- # Search Algorithm
+ ## Search Algorithm
 The queries are processed through searching the title, body, and category fields of the
  documents. Alongside the BM25 similarity model, the BoostQuery function is applied to
  the three different types of fields to give higher overall relevance scores. For titles, there
@@ -25,7 +25,7 @@ The queries are processed through searching the title, body, and category fields
  algorithm which uses the BooleanQuery mechanism. The parser takes the user input and
  then PyLucene combines the queries and singles out the titles, text, and tags with boolean
  logic.
-# Limitations of System
+## Limitations of System
 The system does not use a custom snippet-generation algorithm to display a snippet for each
  search result, it only shows the title for the search result.
  Our system only scrapes about 800 MB of data from Wikipedia. While this may seem like a lot,
@@ -33,7 +33,7 @@ The system does not use a custom snippet-generation algorithm to display a snipp
  This can result in limited answers and it may not have the extent of information that a user is searching
  for. Additionally, loading the results of a query takes some time. If we were to build upon this project, we
  could parallelize the scraping and indexing process in order to account for this limitation.
- # Instructions on how to deploy the system. Ideally, you should include an indexer.bat (Windows) or
+ ## Instructions on how to deploy the system. Ideally, you should include an indexer.bat (Windows) or
  indexer.sh (Unix/Linux) executable file that takes as input all necessary parameters
  To deploy the website:
  Flask must be installed on the system that we run the website on. The site can be deployed by the
@@ -49,7 +49,7 @@ The system does not use a custom snippet-generation algorithm to display a snipp
  tamper_lucene.py.
  Index Time: The total time it takes to index the data is ~45 seconds to 1 minute. The query ranking itself
  should be instantaneous.
- # Web Framework
+ ## Web Framework
  A web-application (e.g. Web Archive) that can be deployed to a webserver like Tomcat.
  Wecreated our website using flask. In index.html, we include code for the structure of our site. At
  the top of the page is the title of our search engine. By clicking on the title, you can return to the
