@@ -1,4 +1,4 @@
-# Overview of system
+# Overview of System
  ## Architecture
 From part A, we collected data from our web crawler (modified to get 800MB) into a
  .json file. The scraped data is indexed with PyLucene, which helps handle the different
