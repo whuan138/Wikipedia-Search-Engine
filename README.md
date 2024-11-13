@@ -1,4 +1,4 @@
-# Overview of system, including (but not limited to):
+# Overview of system
  ## Architecture
 From part A, we collected data from our web crawler (modified to get 800MB) into a
  .json file. The scraped data is indexed with PyLucene, which helps handle the different
@@ -33,7 +33,7 @@ The system does not use a custom snippet-generation algorithm to display a snipp
  This can result in limited answers and it may not have the extent of information that a user is searching
  for. Additionally, loading the results of a query takes some time. If we were to build upon this project, we
  could parallelize the scraping and indexing process in order to account for this limitation.
- ## Instructions on how to deploy the system
+ ## Instructions on How to Deploy the System
  To deploy the website:
  Flask must be installed on the system that we run the website on. The site can be deployed by the
  commands in the group32/group32/partB/ directory:
@@ -57,6 +57,7 @@ The system does not use a custom snippet-generation algorithm to display a snipp
  Results are rendered to the user based on the data in the .json file. If the file is empty, nothing is
  displayed. Additionally, the page re-routes to “search?query=[QUERY]”. Our style.css file includes
  formatting for the website.
+ 
 <img width="571" alt="query_results_terminal" src="https://github.com/user-attachments/assets/f86fed2b-f456-434b-9858-a529018793ea">
 <img width="545" alt="pie_search_query" src="https://github.com/user-attachments/assets/40a518eb-ba24-4163-8094-33f1fb606764">
 <img width="555" alt="link_and_deployment" src="https://github.com/user-attachments/assets/f5a39af4-ece9-46ea-ab9a-2bfe83b1218c">
