@@ -1,0 +1,143 @@
+/* static/style.css */
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(232, 239, 246);
+	
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+	padding-bottom: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+h1 {
+	margin-top: 3%;
+    color: #24352b;
+	align-items: center;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 5px 5px;
+    margin: 10px;
+	width: 140%;
+	margin-right: -10px;
+    border: 2px solid #ffffff;
+	border-right: none;
+    border-radius: 4px;
+	font-size: 17px;
+	/* border-radius: 8px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    padding: 12px 15px;
+    background-color:  rgb(81, 143, 191);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin: 10px;
+    transition: background-color 0.3s ease;
+	font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background-color:rgb(41, 81, 111);
+	
+}
+
+h1{
+	position: fixed;
+	z-index: 100;
+}
+
+.searchbar{
+	flex-direction: row;
+	background-color: rgb(232, 239, 246);
+	
+	width: 100%;
+	
+	align-items: center;
+	/* padding: 0px; */
+	position: fixed;
+	padding-top: 7%;
+	z-index: 1;	
+}
+
+form{
+	display: flex;
+	gap: 5px;
+	align-content: center;
+	margin: 0px; 
+	/* width: 60%; */
+	padding: 0px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.search-results{
+	width: 70%;
+	align-self: center;
+	margin: 0px;
+	padding-top: 10%;
+}
+
+.result{
+	margin: 0px;
+}
+
+.url{
+	text-align: right;
+
+}
+
+a{
+	/* text-decoration: none;
+	background-color: rgb(81, 143, 191);
+	padding: 7px 10px;
+	border-radius: 3px;
+	color: white; */
+	color:rgb(52, 96, 130);
+}
+
+a:hover{
+	/* background-color: rgb(52, 96, 130); */
+	color:rgb(81, 143, 191);
+}
+
+/* result title */
+h3{
+	/* color:rgb(29, 69, 100);  */
+	font-size: 30px;
+}
+
+p{
+	margin-top: -1%;
+	margin-bottom: 3%;
+	color:rgb(123, 139, 151)
+}
+
+h1{
+	color:rgb(31, 73, 104);
+}
+
+.home-link{
+	display: flex;
+	justify-content: center;
+}
+
+.home-link:hover{
+	color:rgb(81, 143, 191);
+}
